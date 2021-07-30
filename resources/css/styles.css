@@ -5,16 +5,20 @@ body{
     background-image:url(/resources/images/bg-pattern-top.svg),url(/resources/images/bg-pattern-bottom.svg);
     background-size:auto, auto;
     background-repeat: no-repeat, no-repeat;
-    background-position-x:130%,-30%;
-    background-position-y:150%,-80%;
+    background-position:right 47vw bottom 5vh, left 40vw top 40vw;
 }
 
-@media only screen and (min-width:767px){
-    body{
-        background-position-x:-150%,250%;
-        background-position-y:140%,-60%;   
-        }
+@media screen and (min-width:600px){
+  body{
+      background-position:right 47vw bottom 5vh, left 40vw top 30vw;
+  }
 }
+
+@media screen and (min-width:1200px){
+    body{
+        background-position:right 47vw bottom 5vh, left 40vw top 25vw;
+    }
+  }
 
 h2{
     font-size:18px;
@@ -25,6 +29,7 @@ p {
 }
 
 #container{
+    position: relative;
     display:flex;
     flex-direction: column;
     overflow:hidden;
